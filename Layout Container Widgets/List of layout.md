@@ -1,0 +1,79 @@
+# List of layout widgets
+
+  
+ 
+   1.  AspectRatio
+  1. Center
+  2. Card
+  3. Container 
+  4. Column
+  5. ConstrainedBox
+  1. Expanded
+  7. Flexible
+  8. FittedBox
+  9. FractionallySizedBox
+  1. LayoutBuidler 
+  11. Positioned
+  12.  Row
+  1. SizedBox
+  14. Stack
+  15. SafeArea
+  16. UnconstrainedBox
+17. Wrap
+
+
+
+
+### AspectRatio
+A widget that attempts to size the child to a specific aspect ratio.
+
+The widget first tries the largest width permitted by the layout constraints. The height of the widget is determined by applying the given aspect ratio to the width, expressed as a ratio of width to height.
+
+
+###  Center
+A widget that centers its child within itself.
+
+This widget will be as big as possible if its dimensions are constrained and widthFactor and heightFactor are null
+###  Card
+A Material Design card: a panel with slightly rounded corners and an elevation shadow.
+
+
+### Container
+A convenience widget that combines common painting, positioning, and sizing widgets.
+### Column
+###  ConstrainedBox
+A widget that imposes additional constraints on its child.
+
+For example, if you wanted child to have a minimum height of 50.0 logical pixels, you could use const BoxConstraints(minHeight: 50.0) as the
+###   Expanded
+Using an Expanded widget makes a child of a Row, Column, or Flex expand to fill the available space along the main axis (e.g., horizontally for a Row or vertically for a Column). If multiple children are expanded, the available space is divided among them according to the flex factor.
+###   Flexible
+Using a Flexible widget gives a child of a Row, Column, or Flex the flexibility to expand to fill the available space in the main axis (e.g., horizontally for a Row or vertically for a Column), but, unlike Expanded, Flexible does not require the child to fill the available space.
+Flexible has the Fit property to adjust the widget to be its own prefferred size.
+###  FittedBox
+Scales and positions its child within itself according to fit.
+
+###  FractionallySizedBox
+A widget that sizes its child to a fraction of the total available space. For more details about the layout algorithm, see RenderFractionallySizedOverflowBox.
+
+###   LayoutBuilder
+Builds a widget tree that can depend on the parent widget's size.
+
+Similar to the Builder widget except that the framework calls the builder function at layout time and provides the parent widget's constraints. This is useful when the parent constrains the child's size and doesn't depend on the child's intrinsic size. The LayoutBuilder's final size will match its child's size.
+
+###   Positioned
+A widget that controls where a child of a Stack is positioned.
+###   Row
+###  SizedBox
+A box with a specified size.
+If given a child, this widget forces it to have a specific width and/or height. These values will be ignored if this widget's parent does not permit them.
+###  Stack
+A widget that positions its children relative to the edges of its box.
+
+This class is useful if you want to overlap several children in a simple way
+###  SafeArea
+A widget that insets its child by sufficient padding to avoid intrusions by the operating system.
+###  UnconstrainedBox
+A widget that imposes no constraints on its child, allowing it to render at its "natural" size.
+
+This allows a child to render at the size it would render if it were alone on an infinite canvas with no constraints
