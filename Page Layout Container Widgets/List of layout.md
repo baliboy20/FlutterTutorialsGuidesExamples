@@ -1,8 +1,6 @@
 # List of layout widgets
 
-  
- 
-   1.  AspectRatio
+ 1.  AspectRatio
   1. Center
   2. Card
   3. Container 
@@ -20,6 +18,8 @@
   15. SafeArea
   16. UnconstrainedBox
 17. Wrap
+18. OverflowBar
+19. Intrinsic Widget (Height and Width)
 
 
 
@@ -34,13 +34,23 @@ The widget first tries the largest width permitted by the layout constraints. Th
 A widget that centers its child within itself.
 
 This widget will be as big as possible if its dimensions are constrained and widthFactor and heightFactor are null
+
+> **Key properties**: HeightFactor, WidthFactor
+
+
 ###  Card
 A Material Design card: a panel with slightly rounded corners and an elevation shadow.
 
 
 ### Container
 A convenience widget that combines common painting, positioning, and sizing widgets.
+>  **Key properties**: color, padding, constraints (BoxConstriants.expand etc)
+> , alignment (Alignment.topCenter etc), width, height
+> transform (Matrix4.rotationZ), decoration (BoxDecoration)
 ### Column
+> **Key properties**: 
+> axes alignment properties. VerticalDirection
+
 ###  ConstrainedBox
 A widget that imposes additional constraints on its child.
 
@@ -77,3 +87,13 @@ A widget that insets its child by sufficient padding to avoid intrusions by the 
 A widget that imposes no constraints on its child, allowing it to render at its "natural" size.
 
 This allows a child to render at the size it would render if it were alone on an infinite canvas with no constraints
+### Wrap
+A widget that displays its children in multiple horizontal or vertical runs. The widget will take up all the space provided by its parent
+> **Key properties**: direction (Axis.vertical), alignment, runAlignment, spacing, runSpacing, TextDirection 
+
+A Wrap lays out each child and attempts to place the child adjacent to the previous child in the main axis, given by direction, leaving spacing space in between. If there is not enough space to fit the child, Wrap creates a new run adjacent to the existing children in the cross axis.
+
+### Overflowbar
+A widget that lays out its children in a row unless they "overflow" the available horizontal space, in which case it lays them out in a column instead.
+
+### 19. Intrinsic Widget (Height and Width)

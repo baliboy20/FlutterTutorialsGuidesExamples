@@ -1,5 +1,10 @@
 #### 1. Projects worked on
 
+
+### Tue 8 Nov
+1) Study of Actions and intent usage. documented in flutter FTGE. Demo'd in zz_actions.
+2) Study of DebugFieldProperties in FTGE Debug.
+
 ### Thur 3 Nov
 ##### Project zz_firebase
 Implementing simple Firebase flutter.
