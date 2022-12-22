@@ -22,4 +22,5 @@ Database/Hosting platforms
 ### List of Dev Resources
 
 8. Figma
-9. 
+
+😘

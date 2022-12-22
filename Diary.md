@@ -1,6 +1,18 @@
 #### 1. Projects worked on
+1) Updated  __Project: animated_list__ eg /Users/will/flutterProjects/Examples/Lists/animated_list to include > infinite scroll with a ``NestedScrollView``
+ displaying multiple tabs. resting on a ``Stack`` widget that has a ``floatingActionButtion`` positined on the left center.
+2) Created __Project: BlocFormIntegration
 
-
+###
+### Wed 14 Dec
+1) Project: Multitab_pages
+- Demo of PageView(), TabBar(), TabBarView(),TabPageSelector()
+- Demo routing transitions with recomended Routing patterns. __See__ *Routing/MaterialPageRoute.md*
+- Project  *__Exercises/various_containers__*: showcasing various widgets including
+  'home',form1',flexibleWidget': showMaterialBanner indexedStack': 
+  ListViewExample': StepperExample': TabPageSelectorEx RadioListTileExam RefreshIndicatorE
+  TabBarExample':  PageViewExample': SnackBarExample': WrapExample':  UnconstrainedBoxE
+  ConstrainedBox CompareContainers TabLayoutExample'
 ### Tue 8 Nov
 1) Study of Actions and intent usage. documented in flutter FTGE. Demo'd in zz_actions.
 2) Study of DebugFieldProperties in FTGE Debug.
